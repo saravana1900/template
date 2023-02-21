@@ -1,0 +1,10 @@
+variable "region" { default = "" }
+variable "env_flag" { default = "" }
+variable "env" { default = " " }
+variable "env-purpose" { default = " " }
+variable "category" { default = " " }
+variable "client" { default = " " }
+variable "fincode" { default = " " }
+variable "key_name" { default = " " }
+variable "path" { default = " " }
+variable "resource_tag" { default = " " }

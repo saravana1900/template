@@ -1,0 +1,6 @@
+env_flag     = "ENV_TYPE"
+region       = "REGION"
+client       = "CLIENT_NAME"
+key_name     = "CLIENT_NAME-golden-key"
+path         = "/root/client-keys"
+resource_tag = "CLIENT_NAME"
