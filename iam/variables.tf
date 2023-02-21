@@ -9,4 +9,4 @@ variable "fincode"             	  { default = "" }
 variable "tf_state_bucket"        { default = "" }
 variable "resource_tag"           { default = "" }
 variable "iam_users"              { default = "" }
-variable tf_state_bucket_region        { default =  }
+variable "tf_state_bucket_region"        { default = ""  }

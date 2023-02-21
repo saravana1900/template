@@ -6,6 +6,7 @@ variable "env" { default = "" }
 variable "category" { default = "" }
 variable "fincode" { default = "" }
 variable "tf_state" { default = "" }
+variable "tf_state_bucket_region"        { default = ""  }
 variable "ticket" { default = "" }
 variable "owner" { default = "" }
 variable "resource_tag" { default = "" }
@@ -44,4 +45,3 @@ variable "dev" {
 }
 
 
-variable tf_state_bucket_region        { default =  }

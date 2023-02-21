@@ -8,4 +8,4 @@ variable "fincode" { default = " " }
 variable "key_name" { default = " " }
 variable "path" { default = " " }
 variable "resource_tag" { default = " " }
-variable tf_state_bucket_region        { default =  }
+variable "tf_state_bucket_region"        { default = ""  }
