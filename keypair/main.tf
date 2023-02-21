@@ -1,17 +1,4 @@
 
-provider "aws" {
-  region = var.region
-}
-
-terraform {
-  backend "s3" {
-    bucket = "BUCKET_NAME"
-    region = "REGION"
-    key    = "CLIENT_NAME/keypair/terraform.tfstate"
-
-  }
-}
-
 # Generate Key Pair ssh for EC2 instace
 locals {
   public_key_filename  = "${var.path}/${var.client}-dev-golden-key.pub"
