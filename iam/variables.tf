@@ -1,0 +1,11 @@
+variable "region"        	  { default = "" }
+variable "env_flag"      	  { default = "" }
+variable "tag_env"                { default = "" }
+variable "client"             	  { default = "" }
+variable "env-purpose"            { default = "" }
+variable "env"             	  { default = "" }
+variable "category"               { default = "" }
+variable "fincode"             	  { default = "" }
+variable "tf_state_bucket"        { default = "" }
+variable "resource_tag"           { default = "" }
+variable "iam_users"              { default = "" }
