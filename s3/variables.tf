@@ -8,3 +8,4 @@ variable "fincode"          { default = "" }
 variable "kms"              { default = "" }
 variable "v3ops-custom-tag" { default = "" }
 variable "resource_tag"     { default = "" }
+variable tf_state_bucket_region        { default =  }

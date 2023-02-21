@@ -44,3 +44,4 @@ variable "dev" {
 }
 
 
+variable tf_state_bucket_region        { default =  }
