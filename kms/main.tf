@@ -1,7 +1,7 @@
 
 
 resource "aws_kms_key" "key" {
-  count               = var.env == "dev" ? 1 : 0
+  count               = var.env_flag == "dev" ? 1 : 0
   description         = "Use for encrypting non production instances and surrounding services for ${var.client} VPC"
   enable_key_rotation = true
   tags = merge(
@@ -101,7 +101,7 @@ resource "aws_kms_key" "key" {
 EOF
 }
 resource "aws_kms_alias" "alias2" {
-  count         = var.env == "dev" ? 1 : 0
+  count         = var.env_flag == "dev" ? 1 : 0
   name          = "alias/v3d-${var.client}-nonprod-${var.region}"
   target_key_id = aws_kms_key.key[0].key_id
 }

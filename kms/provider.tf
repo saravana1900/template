@@ -7,7 +7,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "BUCKET_NAME"
-    region = "us-east-1"
+    region = "REGION"
     key    = "CLIENT_NAME/kms/terraform.tfstate"
 
   }

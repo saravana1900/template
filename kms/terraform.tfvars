@@ -1,5 +1,5 @@
 region          = "us-east-1"
-env             = "dev"
+env_flag        = "ENV_TYPE"
 client          = "CLIENT_NAME"
 resource_tag    = "CLIENT_NAME"
 tf_state_bucket = "BUCKET_NAME"
