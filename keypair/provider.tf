@@ -1,12 +1,12 @@
 
 provider "aws" {
-  region = var.region
+  region = "TF_BUCKET_REGION"
 }
 
 terraform {
   backend "s3" {
     bucket = "BUCKET_NAME"
-    region = "REGION"
+    region = "TF_BUCKET_REGION"
     key    = "CLIENT_NAME/keypair/terraform.tfstate"
 
   }
