@@ -34,3 +34,4 @@ dev = {
 
 
 
+tf_state_bucket_region  = "TF_BUCKET_REGION"
