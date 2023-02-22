@@ -11,10 +11,9 @@ update_file(){
 
    # Updating Tf state bucket region value
     
-   sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../iam/*.tfvars ../iam/*.tf  
-   sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../kms/*.tfvars ../kms/*.tf  
-   sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../kms/terraform.tfvars ../kms/provider.tf 
-   sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../s3/*.tfvars ../s3/*.tf
+   sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../iam/*.tfvars ../iam/*.tf  ../keypair/*.tfvars ../keypair/*.tf 
+   sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../kms/*.tfvars ../kms/*.tf  ../s3/*.tfvars ../s3/*.tf
+  
 
    # Updating tfstate bucket value
    sed -i "s/BUCKET_NAME/$tf_b/g" ../iam/*.tfvars ../iam/*.tf ../keypair/*.tfvars ../keypair/*.tf
@@ -27,15 +26,14 @@ update_file(){
 
    # Updating deployment Client Name value
 
-   sed -i "s/CLIENT_NAME/$client/g" ../iam/*.tfvars ../iam/*.tf 
-   sed -i "s/CLIENT_NAME/$client/g" ../keypair/*.tfvars ../keypair/*.tf 
-   sed -i "s/CLIENT_NAME/$client/g" ../kms/*.tfvars ../kms/*.tf 
-   sed -i "s/CLIENT_NAME/$client/g"  ../s3/*.tfvars ../s3/*.tf
+   sed -i "s/CLIENT_NAME/$client/g" ../iam/*.tfvars ../iam/*.tf ../keypair/*.tfvars ../keypair/*.tf
+   sed -i "s/CLIENT_NAME/$client/g" ../kms/*.tfvars ../kms/*.tf  ../s3/*.tfvars ../s3/*.tf
+   
 
    # Updating deployment environment (dev/prod) value
 
-   sed -i "s/ENV_TYPE/$region/g" ../iam/terraform.tfvars ../keypair/terraform.tfvars
-   sed -i "s/ENV_TYPE/$region/g" ../kms/terraform.tfvars ../s3/terraform.tfvars
+   sed -i "s/ENV_TYPE/$region/g" ../iam/*.tfvars ../keypair/*.tfvars
+   sed -i "s/ENV_TYPE/$region/g" ../kms/*.tfvars ../s3/*.tfvars
    
    
 
