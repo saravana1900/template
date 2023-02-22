@@ -17,8 +17,8 @@ update_file(){
    sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../s3/*.tfvars ../s3/*.tf
 
    # Updating tfstate bucket value
-   sed -i "s/BUCKET_NAME/$tf_b/g" ../iam/provider.tf ../keypair/provider.tf ../kms/provider.tf  ../s3/provider.tf ../s3/main.tf
-   sed -i "s/BUCKET_NAME/$tf_b/g" ../iam/terraform.tfvars ../keypair/terraform.tfvars ../kms/terraform.tfvars ../s3/terraform.tfvars
+   sed -i "s/BUCKET_NAME/$tf_b/g" ../iam/*.tfvars ../iam/*.tf ../keypair/*.tfvars ../keypair/*.tf
+   sed -i "s/BUCKET_NAME/$tf_b/g" ../kms/*.tfvars ../kms/*.tf ../s3/*.tfvars ../s3/*.tf
    
    # Updating deployment region value
 
