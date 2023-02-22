@@ -1,3 +1,12 @@
+data "terraform_remote_state" "kms_info" {
+    backend = "s3"
+    config = {
+        bucket = "BUCKET_NAME"
+	key = "CLIENT_NAME/kms/terraform.tfstate"
+        region = "REGION"
+    }
+}
+
 
 resource "aws_s3_bucket" "bucket0" {
   bucket 		  = "${var.resource_tag}devs3artifacts"

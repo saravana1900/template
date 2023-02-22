@@ -17,20 +17,20 @@ update_file(){
    sed -i "s/TF_BUCKET_REGION/$tf_b_reg/g" ../s3/terraform.tfvars ../s3/provider.tf
 
    # Updating tfstate bucket value
-   sed -i "s/BUCKET_NAME/$tf_b/g" ../iam/provider.tf ../keypair/provider.tf ../kms/provider.tf  ../s3/provider.tf
+   sed -i "s/BUCKET_NAME/$tf_b/g" ../iam/provider.tf ../keypair/provider.tf ../kms/provider.tf  ../s3/provider.tf ../s3/main.tf
    sed -i "s/BUCKET_NAME/$tf_b/g" ../iam/terraform.tfvars ../keypair/terraform.tfvars ../kms/terraform.tfvars ../s3/terraform.tfvars
    
    # Updating deployment region value
 
    sed -i "s/REGION/$region/g" ../iam/terraform.tfvars ../keypair/terraform.tfvars 
-   sed -i "s/REGION/$region/g" ../kms/terraform.tfvars ../s3/terraform.tfvars
+   sed -i "s/REGION/$region/g" ../kms/terraform.tfvars ../s3/terraform.tfvars ../s3/main.tf
 
    # Updating deployment Client Name value
 
    sed -i "s/CLIENT_NAME/$client/g" ../iam/terraform.tfvars ../iam/provider.tf 
    sed -i "s/CLIENT_NAME/$client/g" ../keypair/terraform.tfvars ../keypair/provider.tf 
    sed -i "s/CLIENT_NAME/$client/g" ../kms/terraform.tfvars ../kms/provider.tf 
-   sed -i "s/CLIENT_NAME/$client/g"  ../s3/terraform.tfvars ../s3/provider.tf
+   sed -i "s/CLIENT_NAME/$client/g"  ../s3/terraform.tfvars ../s3/provider.tf ../s3/main.tf
 
    # Updating deployment environment (dev/prod) value
 
