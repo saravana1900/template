@@ -1,6 +1,6 @@
 
 provider "aws" {
-  region = "TF_BUCKET_REGION"
+  region = "REGION"
 }
 
 terraform {

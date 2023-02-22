@@ -1,7 +1,7 @@
 # Provider details for KMS
 
 provider "aws" {
-  region = "TF_BUCKET_REGION"
+  region = "REGION"
 }
 
 terraform {
