@@ -34,10 +34,6 @@ update_file(){
 
    sed -i "s/ENV_TYPE/$region/g" ../iam/*.tfvars ../keypair/*.tfvars
    sed -i "s/ENV_TYPE/$region/g" ../kms/*.tfvars ../s3/*.tfvars
-   
-   
-
-
 
 }
 
