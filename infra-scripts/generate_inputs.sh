@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -x
 
 update_file(){
    
